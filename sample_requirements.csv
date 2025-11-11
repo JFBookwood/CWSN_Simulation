@@ -1,0 +1,4 @@
+file,tau_int,N_current,N_eff_current,N_needed_eff2000,extra_needed_eff2000,N_needed_eff10000,extra_needed_eff10000
+c:\Users\Jesse\Desktop\Experimente\CWSN\data\desi\edr\processed\voidfinder\vgcf\cobaya_pack\chains_cosmo_quick_camb_floor.1.txt,787.7042862377809,3600,4.570242999684888,1575409,1571809,7877043,7873443
+c:\Users\Jesse\Desktop\Experimente\CWSN\data\desi\edr\processed\voidfinder\vgcf\cobaya_pack\chains_cosmo_quick_camb_floor_prior059.1.txt,256.62318864475185,18000,70.14175178423851,513247,495247,2566232,2548232
+c:\Users\Jesse\Desktop\Experimente\CWSN\data\desi\edr\processed\voidfinder\vgcf\cobaya_pack\chains_cosmo_quick_camb_ncdm3.1.txt,103.39649326548847,18000,174.08714194766617,206793,188793,1033965,1015965
