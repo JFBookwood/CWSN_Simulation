@@ -1,51 +1,83 @@
-# system/ide
+# System & IDE
 .DS_Store
 Thumbs.db
 .vscode/
 .vs/
 .idea/
+*.swp
+*.swo
+*~
 
-# zencoder & tooling
-.zencoder/
-scripts/zencoder_strip_repo.py
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
 
-# python
+# Python
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
+*.so
+*.egg
 *.egg-info/
-.eggs/
-build/
 dist/
+build/
+.eggs/
+.pytest_cache/
+.coverage
+htmlcov/
 
-# results and analysis artifacts
+# Development tools
+.zencoder/
+scripts/zencoder_strip_repo.py
+.zenflow/
+
+# Data & Results (keep structure, exclude heavy files)
+data/**
 results/**
 analysis/**
-!analysis/README.md
-
-# data (exclude heavy files) but keep code/config in cobaya_pack
-data/**
 !data/**/README.md
+!analysis/README.md
+!results/README.md
 !data/desi/edr/processed/voidfinder/vgcf/cobaya_pack/**/*.py
 !data/desi/edr/processed/voidfinder/vgcf/cobaya_pack/**/*.yaml
 
-# common large files (keep source clean)
+# Large scientific data files
+*.vti
+*.vtp
 *.npz
+
+# Images and external packages
+Images/
+external_packages/
 *.npy
 *.fits
+*.h5
+*.hdf5
+
+# Large binary/media files
+*.zip
+*.tar.gz
+*.tar
 *.pdf
 *.png
 *.jpg
 *.jpeg
+*.mp4
 
-# cobaya runtime artifacts
-chains_*/
+# Cobaya MCMC artifacts
+chains_*.txt
+chains_*.checkpoint
 *.progress
 *.covmat
 *.updated.yaml
+chains_filtered_final.*
 
-# temporary
+# Temporary files
 *.tmp
 *.log
 *.bak
+*.swp
+.DS_Store
