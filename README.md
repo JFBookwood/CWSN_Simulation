@@ -59,68 +59,6 @@ python scripts/analyze_mcmc_results.py
 python test_likelihood.py
 ```
 
-## Project Structure
-
-```
-CWSN/
-├── README.md                          # This file
-├── requirements.txt                   # Python dependencies
-├── LICENSE                            # MIT License
-│
-├── Revolver/                          # C/Fortran void-finder implementation
-│   ├── src/                           # Source code
-│   ├── python_tools/                  # Python bindings
-│   ├── qhull/                         # Convex hull library
-│   └── Makefile
-│
-├── scripts/                           # Analysis & inference scripts (50+)
-│   ├── run_complete_pipeline.py       # Master execution script
-│   ├── run_cobaya_mcmc_survey_aware.py# MCMC inference
-│   ├── run_voidfinder.py              # Void catalog generation
-│   │
-│   ├── void_expansion_neutrino_analysis_realistic.py
-│   ├── void_visualization_suite.py    # Interactive void visualization
-│   ├── compare_voidfinders.py         # Algorithm comparison
-│   │
-│   ├── analyze_mcmc_results.py        # Triangle plots, convergence
-│   ├── monitor_cobaya_progress.py     # Real-time monitoring
-│   ├── compute_mnu_stats.py           # Neutrino mass statistics
-│   │
-│   ├── vgcf_jackknife.py              # Jackknife error analysis
-│   ├── fit_vgcf_robust.py             # Robust VGCF fitting
-│   ├── export_cobaya_likelihood.py    # Likelihood export
-│   │
-│   └── [additional analysis scripts]
-│
-├── data/                              # Data directory (large files excluded from git)
-│   ├── desi/
-│   │   └── edr/
-│   │       └── processed/
-│   │           ├── voidfinder/
-│   │           ├── pycosmomf_voids/
-│   │           ├── neutrino_analysis_realistic/
-│   │           └── mcmc_analysis/
-│   └── README.md                      # Data structure documentation
-│
-├── results/                           # Analysis outputs (excluded from git)
-│   ├── void_catalogs/
-│   ├── mcmc_chains/
-│   └── README.md
-│
-├── analysis/                          # Additional analysis data
-│   └── README.md
-│
-├── Images/                            # Figures and visualizations
-│   ├── void_distributions/
-│   ├── mcmc_diagnostics/
-│   └── paraview_renders/
-│
-└── external_packages/                 # Third-party integrations
-    ├── PyCosmoMMF/
-    ├── VIDE/
-    └── ZOBOV/
-```
-
 ## Key Features
 
 ### Void-Finding Algorithms
