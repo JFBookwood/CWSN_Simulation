@@ -1,7 +1,7 @@
 """
-Plottet MCMC-Ergebnisse: Posterior-Verteilungen und Likelihood-Konturen.
+Plots MCMC results: posterior distributions and likelihood contours.
 
-Dieses Skript lädt MCMC-Ketten und erstellt Corner-Plots für die Parameter-Posteriors.
+This script loads MCMC chains and creates corner plots for the parameter posteriors.
 """
 
 import numpy as np
