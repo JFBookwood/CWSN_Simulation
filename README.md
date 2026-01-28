@@ -1,17 +1,18 @@
 # CWSN: Cosmological Void-based Neutrino Mass Estimation
 
-A comprehensive Bayesian inference framework for constraining neutrino mass using cosmological voids (Void-Size Cluster Function) with data from the Dark Energy Spectroscopic Instrument (DESI).
+A comprehensive Bayesian inference framework for constraining neutrino mass using cosmological voids (Void-Size Cluster Function) with data from the Dark Energy Spectroscopic Instrument (DESI) and the TNG300 Simulation.
+Made for Jugend forscht contest.
 
 ## Overview
 
-This project integrates multiple void-finding algorithms (REVOLVER, PyCosmoMMF) with Bayesian MCMC inference (Cobaya) to:
+This project integrates multiple void-finding algorithms (REVOLVER, PyCosmoMMF and mainly ZOBOV) with Bayesian MCMC inference (Cobaya) to:
 
 - **Identify and characterize cosmological voids** in large-scale structure surveys
 - **Compute void size distributions** and cluster functions
 - **Constrain neutrino mass parameters** through likelihood analysis
 - **Validate inference robustness** via mock recovery tests and convergence diagnostics
 
-**Current Status**: Converged MCMC chains with constraints on neutrino mass: **Mνθ = 0.0601 ± 0.0015 eV** (best chain, Rₛₚₗᵢₜ = 1.019)
+**Current Status**: Converged MCMC chains with constraints on neutrino mass: **Mνθ = 0.1 ± 0.005 eV** (best chain, Rₛₚₗᵢₜ = 1.019)
 
 ## Quick Start
 
@@ -118,8 +119,8 @@ Acceptance Rate:   ~50% (adaptive proposal)
 ✓ **Converged inference**: Multiple convergence criteria satisfied  
 ✓ **Unbiased likelihood**: Mock recovery tests within HPD68  
 ✓ **Robust constraints**: mνθ well-constrained within DESI EDR sample  
-⚠️ **Sample size limitation**: N_eff ~174 requires ~1–10M additional samples for publication-grade precision  
-⚠️ **No significant detection**: Current σ(mnu) >> threshold for individual neutrino mass
+**Sample size limitation**: N_eff ~174 requires ~1–10M additional samples for publication-grade precision  
+**No significant detection**: Current σ(mnu) >> threshold for individual neutrino mass
 
 ## Data Requirements
 
@@ -209,35 +210,9 @@ Key papers and frameworks:
 - **CAMB**: [Lewis, Challinor & Lasenby (2000)](https://arxiv.org/abs/astro-ph/9911177)
 - **REVOLVER**: [Padilla et al. (2005)](https://arxiv.org/abs/astro-ph/0506355)
 
-## Contributing
-
-Contributions welcome! Please:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/your-feature`)
-3. Follow code style conventions (see below)
-4. Add tests for new functionality
-5. Submit a pull request
-
-See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
-
-## Code Style
-
-- **Python**: PEP 8 compliance (use `black` for formatting)
-- **Docstrings**: NumPy style for functions
-- **Comments**: Explain *why*, not *what*
-- **Notebooks**: Use `.py` scripts for reproducibility
-
 ## License
 
 This project is licensed under the **MIT License** – see [LICENSE](LICENSE) file for details.
-
-## Contact & Support
-
-**Project Lead**: [Jesse] ([email])  
-**Questions?** Open an issue on GitHub or contact the maintainers.
-
----
 
 ## Acknowledgments
 
@@ -245,5 +220,7 @@ This project builds upon:
 - DESI Collaboration data and infrastructure
 - Cobaya & CAMB communities
 - Void-finder algorithm developers (REVOLVER, PyCosmoMMF, VIDE)
+
+This project is developed for Jugend forscht contest.
 
 **Last Updated**: January 2026
