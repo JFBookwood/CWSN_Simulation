@@ -1,7 +1,7 @@
 # CWSN: Cosmological Void-based Neutrino Mass Estimation
 
 A comprehensive Bayesian inference framework for constraining neutrino mass using cosmological voids (Void-Size Cluster Function) with data from the Dark Energy Spectroscopic Instrument (DESI).
-This project was made for the Jugend forscht Competition.
+This project was made for the Jugend forscht competition.
 
 ## Overview
 
