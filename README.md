@@ -149,20 +149,6 @@ Convergence Criterion: R̂ < 0.01
 Acceptance Rate:   ~50% (adaptive proposal)
 ```
 
-### Parameter Space
-
-| Parameter | Prior Range | Meaning |
-|-----------|-------------|---------|
-| **mnu** | 0.05–0.5 eV | **Neutrino mass (primary)** |
-| ombh2 | 0.019–0.025 | Baryon density |
-| omch2 | 0.09–0.15 | CDM density |
-| H0 | 60–80 km/s/Mpc | Hubble constant |
-| As | 1.6e-9–2.8e-9 | Primordial amplitude |
-| ns | 0.9–1.0 | Spectral index |
-| A | 0.05–3.0 | VGCF amplitude |
-| beta | -0.5–1.0 | RSD effect |
-| C | -0.5–0.5 | Constant offset |
-
 ## Results Summary
 
 ### Best MCMC Chain Results
